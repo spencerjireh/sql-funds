@@ -1,0 +1,61 @@
+.block {
+  margin: var(--space-4) 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-code-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.copyButton {
+  background: none;
+  border: none;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: color 0.15s, background 0.15s;
+}
+
+.copyButton:hover {
+  color: var(--color-text);
+  background: var(--color-border-light);
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  padding: var(--space-4);
+  background: var(--color-surface);
+  overflow-x: auto;
+  margin: 0;
+}
+
+.code code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.keyword { color: #2563EB; font-weight: 600; }
+.string { color: #16A34A; }
+.number { color: #D97706; }
+.comment { color: #8B949E; font-style: italic; }
+.function { color: #7C3AED; }
+.operator { color: #CF222E; }
