@@ -1,0 +1,35 @@
+.container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.toggleGroup {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.toggleBtn {
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--color-border, #E0DDD8);
+  background: white;
+  color: var(--color-text, #1B2333);
+  font-weight: 600;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-mono);
+}
+
+.toggleBtn:hover {
+  border-color: #0D9488;
+}
+
+.toggleBtnActive {
+  background: #0D9488;
+  color: white;
+  border-color: #0D9488;
+}

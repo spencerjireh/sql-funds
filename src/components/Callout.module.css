@@ -1,10 +1,11 @@
 .callout {
-  margin: var(--space-4) 0;
+  margin: var(--space-5) 0;
   padding: var(--space-4) var(--space-5);
   border-radius: var(--radius-md);
-  border-left: 4px solid;
+  border-left: 3px solid;
   font-size: var(--text-sm);
-  line-height: 1.6;
+  line-height: 1.65;
+  position: relative;
 }
 
 .callout p:last-child {
@@ -22,16 +23,19 @@
 }
 
 .dialect {
-  background: var(--color-accent-light);
-  border-color: var(--color-accent);
+  background: #F5F3FF;
+  border-color: #7C3AED;
 }
 
 .title {
+  font-family: var(--font-mono);
   font-weight: 600;
-  font-size: var(--text-sm);
+  font-size: 0.7rem;
   margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .info .title { color: var(--color-primary); }
 .warning .title { color: var(--color-warning); }
-.dialect .title { color: var(--color-accent); }
+.dialect .title { color: #7C3AED; }

@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.toggleOverlay {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.35rem;
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.toggleBtn {
+  padding: 0.25rem 0.65rem;
+  border-radius: 5px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-weight: 600;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(4px);
+}
+
+.toggleBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.toggleBtnActive {
+  background: #0D9488;
+  border-color: #0D9488;
+}

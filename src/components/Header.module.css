@@ -4,12 +4,31 @@
   right: 0;
   left: var(--sidebar-width);
   height: var(--header-height);
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
+  background: rgba(248, 248, 246, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border-light);
   display: flex;
   align-items: center;
   padding: 0 var(--space-6);
   z-index: 90;
+}
+
+/* Subtle gradient accent along bottom */
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-primary) 30%,
+    var(--color-accent) 70%,
+    transparent 100%
+  );
+  opacity: 0.3;
 }
 
 .menuButton {
@@ -21,17 +40,28 @@
   padding: var(--space-2);
   margin-right: var(--space-3);
   line-height: 1;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast);
+}
+
+.menuButton:hover {
+  background: var(--color-border-light);
 }
 
 .title {
+  font-family: var(--font-sans);
   font-size: var(--text-sm);
   font-weight: 500;
-  color: var(--color-text-secondary);
+  color: var(--color-text-muted);
+  letter-spacing: 0.01em;
 }
 
 .titleAccent {
+  font-family: var(--font-mono);
   color: var(--color-primary);
   font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0;
 }
 
 @media (max-width: 768px) {
